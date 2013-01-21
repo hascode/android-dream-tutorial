@@ -22,7 +22,12 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.service.dream"
+                android:resource="@xml/hascode_dream" />
         </service>
+        <activity android:name="CustomDreamSettingsActivity"></activity>
     </application>
 
 </manifest>
