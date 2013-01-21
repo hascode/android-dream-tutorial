@@ -2,7 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical" >
-    
+
+    <TextView
+        android:id="@+id/animatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/demo_text"
+        android:typeface="monospace"
+        android:shadowColor="#000000"
+        android:shadowRadius="2."
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </LinearLayout>

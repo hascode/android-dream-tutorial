@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hascode.dream_app"
+    package="com.hascode.android.dream_app"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <service
-            android:name=".SampleDream"
+            android:name="com.hascode.android.dream_app.SampleDream"
             android:exported="true"
             android:icon="@drawable/ic_launcher"
             android:label="@string/custom_dream_label" >
@@ -22,11 +22,6 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-            <!-- Point to additional information for this dream (optional) -->
-            <meta-data
-                android:name="android.service.dream"
-                android:resource="@xml/sample_dream" />
         </service>
     </application>
 
